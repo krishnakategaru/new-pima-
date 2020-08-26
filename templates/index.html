@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Virtual Women Diabetic Test Center</title>
+</head>
+
+<body>
+
+    <div style="color:blue">
+    <br><br><h3 style="color: white">{{ prediction_texts }}<h3>
+    
+        <form action="{{ url_for('predict')}}" method="POST">
+            <h2>TEST UR RISK OF BEING DIABETIC</h2>
+            <h3>Are you pregnant, please enter ur months,(in case No, please enter 0)</h3>
+            <input id="pregnant" name="pregnant" type="number " required>
+            <h3>Enter your glucose level from report</h3><br>
+            <input id="glucose" name="glucose" required="required">
+            <h3>Enter your bp value from report</h3><br>
+            <input id="bp" name="bp" required="required">
+            <br>
+            <h3>Enter your skin level from report</h3><br>
+            <input id="tricep" name="tricep" required="required"><br>
+            
+            <h3>Enter your insulin level from report</h3><br>
+            <input id="insulin" name="insulin" required="required"><br>
+            
+            <h3>Enter your BMI value from report</h3><br>
+            <input id="bmi" name="bmi" required="required">
+            <br>
+            <h3>Enter your DPF value from report</h3><br>
+            <input id="dpf" name="dpf" required="required"><br>
+            
+            <h3>Enter your Age </h3><br>
+            <input id="age" name="age" required="required"><br>
+            
+            <button id="sub" type="submit ">Calculate your risk</button>
+            <br>
+</div>
+
+
+
+        </form>
+
+
+
+        
+
+
+
+
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #pregnant {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #glucose {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #bp {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #tricep {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #insulin {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }        
+         #bmi {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }       
+ 
+         #dpf {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }       
+        #age {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        
+    </style>
+</body>
+
+</html>
